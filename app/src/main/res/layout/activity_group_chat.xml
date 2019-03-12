@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatActivity"
+    android:background="@drawable/chat_10">
+<include
+    android:id="@+id/groupChatBarLayout"
+    layout="@layout/appbar_layout">
+
+</include>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/groupMessagesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_above="@id/chatLinearLayout"
+        android:layout_alignParentStart="true"
+        ></android.support.v7.widget.RecyclerView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/inputGroupMessage"
+            android:layout_width="309dp"
+            android:layout_height="59dp"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout"
+
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:hint="write your message here"
+            android:padding="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnSendMessage"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="2dp"
+            android:src="@drawable/send_message"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toEndOf="@+id/inputGroupMessage" />
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

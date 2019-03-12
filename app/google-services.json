@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "820856141577",
+    "firebase_url": "https://heyllo.firebaseio.com",
+    "project_id": "heyllo",
+    "storage_bucket": "heyllo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820856141577:android:2fb1c938c93182c6",
+        "android_client_info": {
+          "package_name": "com.gamecodeschool.heyllo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820856141577-58op2gp1i12q4qor6v29sqkfmffgi1hu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamecodeschool.heyllo",
+            "certificate_hash": "059d35d1c6e2b906d3c6d45632e3695f2d9e0ec4"
+          }
+        },
+        {
+          "client_id": "820856141577-j036fmshvq5v3or5848oln8nl6dpa425.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTHTCkMuBOMeql9gm7HE6s8nmdn7-AnBk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820856141577-j036fmshvq5v3or5848oln8nl6dpa425.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

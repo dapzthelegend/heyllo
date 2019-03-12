@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/profile_activity2">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/profile_image"
+        android:id="@+id/visitProfileImage"
+        />
+
+    <TextView
+        android:id="@+id/visitProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:layout_below="@+id/visitProfileImage"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/visitProfileStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heyllo, how are you doing?"
+        android:layout_below="@+id/visitProfileName"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/visitProfileSendRequest"
+        android:layout_below="@+id/visitProfileStatus"
+
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:background="@drawable/buttons"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="MESSAGE"
+        android:textColor="@android:color/background_light"/>
+
+</RelativeLayout>
